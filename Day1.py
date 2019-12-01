@@ -16,18 +16,16 @@ def compute(argument):
     argument = argument - 2
     if argument > 0:
         sum = sum + argument
-
     return argument
 
 
 while line != '':
     for i in line.split():
         answer = int(i)
-
 # In order to solve the first half of the problem, comment the "while" below.
     while answer > 0:
         answer = compute(answer)
-
     line = inFile.readline()
 
+    
 outFile.write(str(sum))
