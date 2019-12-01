@@ -11,7 +11,6 @@ sum = 0
 def compute(argument):
     global sum
     argument = argument // 3 - 2
-    argument = int(argument)
     if argument > 0:
         sum = sum + argument
     return argument
